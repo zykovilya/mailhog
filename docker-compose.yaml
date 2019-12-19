@@ -13,5 +13,5 @@ services:
       - ./mailhog.auth:/mailhog.auth:ro
       - ./data:/data:rw
     ports:
-      - "1025:1025"  
+      - "1025:1025" #127.0.0.1:1025:1025  
       - "8025:8025"
