@@ -4,6 +4,7 @@ services:
   mailhog:
     image: mailhog/mailhog
     container_name: mailhog
+    restart: always
     environment:
       MH_AUTH_FILE: /mailhog.auth
       MH_MAILDIR_PATH: /data
@@ -12,5 +13,5 @@ services:
       - ./mailhog.auth:/mailhog.auth:ro
       - ./data:/data:rw
     ports:
-      - "1025:1025"
+      - "1025:1025"  
       - "8025:8025"
