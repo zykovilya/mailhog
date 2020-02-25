@@ -8,5 +8,6 @@
  `printf "login:" > mailhog.auth`
  
  `printf "$(sudo docker exec  mailhog /bin/sh -c "MailHog bcrypt password")" >> mailhog.auth`
+  mailhog - name of docker container mailhog
 
  `cat mailhog.auth`
