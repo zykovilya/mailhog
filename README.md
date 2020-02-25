@@ -4,5 +4,6 @@
 - smtp on port 2025 with login="" and password=""
 
  `echo "login:" > mailhog.auth`
+ 
  `docker exec  mailhog /bin/sh -c "MailHog bcrypt password" >> mailhog.auth`
 
